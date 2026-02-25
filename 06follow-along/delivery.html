@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Get your next meal delivered by drone.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="delivery.css">
+
+    <meta charset="UTF-8">
+    <title>Drone Delivery Services LLC.</title>
+</head>
+
+<body>
+    <!-- start the page header -->
+    <header>
+        <span>Drone Delivery </span>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li class="active"><a href="delivery.html">Request a Delivery</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- start the page main -->
+    <main>
+        <h1>Request a delivery</h1>
+
+        <form method="get" action="thanks.html" class="myform">
+            <fieldset>
+                <legend>customer information</legend>
+                <label> first Name:<input type="text" name="f_name" required></label>
+
+                <label> last Name:<input type="text" name="f_name" required></label>
+
+                <label>cell number: <input type="tel" name="phone" required placeholder="789-123-4567"> </label>
+
+            </fieldset> <!-- seprete box -->
+            <fieldset>
+                <legend>Delivery methods</legend>
+                <label> <input type="radio" value="drone" name="method"> Drone Delvery(2hrs)</label>
+
+                <label> <input type="radio" value="cycle" name="method"> motorcycle delevery (4hrs)</label>
+
+                <label> <input type="radio" value="robot" name="method"> robot delevery(6hrs)</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>delvery options</legend>
+                <label> <input type="checkbox"  name="porch" value="porch"> front porch</label>
+                
+                <label> <input type="checkbox"  name="deck" value="deck"> the deck</label>
+
+                <label> <input type="checkbox"  name="driveway " value="driveway"> driveway</label>
+
+                <label> <input type="checkbox"  name="garage" value="garage"> inside the garage</label> <br><br>
+
+                <label> prefered delvery time 
+                    <select name="time">
+                        <option value="none"> please select an option </option>
+                        <option value="moring"> bewteen 7am-11 am </option>
+                        <option value="noon"> bewteen 11am-2pm </option>
+                        <option value="afternoon"> bewteen 2pm-5pm </option>
+                        <option value="evening"> bewteen 5pm-8pm </option>
+                    </select>
+
+                </label>
+                
+
+            </fieldset>
+             <label>comments:
+                    <textarea name="comments"></textarea>
+                </label>
+
+                <input type="submit" value=" Send Request">
+        </form>
+
+    </main>
+
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy;202X &bull; Drone Delivery Services &bull; <a href="mailto:zen@gmail.com">Email Us</a> </p>
+    </footer>
+</body>
+
+</html>
