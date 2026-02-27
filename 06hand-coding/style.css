@@ -1,0 +1,251 @@
+/*this is the start of my css*/
+
+body {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/*this is the header area stuff here*/
+header {
+
+    background-color: #05402b;
+    padding: 1rem 2vw;
+}
+
+header span {
+    margin: 0;
+    color: #f7f7dc;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/*this is the navagation stuff here*/
+
+nav {
+    background-color: #05402b;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #f7f7dc;
+    font-weight: 700;
+    display: block;
+    padding: .8rem 2rem;
+
+
+}
+
+nav li.active a {
+    background-color: #05402b;
+    color: #f7f7dc;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/*this is the main area stuff here*/
+
+main {
+    padding: 1rem 2vw;
+
+}
+
+main h1 {
+    color: #2b2b2b;
+}
+
+main h2 {
+    color: #2b2b2b;
+    margin-bottom: .2rem;
+}
+
+main p {
+    color: #333;
+    margin: 0;
+}
+
+main ol {
+    padding: .5rem 30px;
+    background-color: #efefef;
+    list-style-type: lower-alpha;
+
+}
+
+main dl dt {
+    color: #05402b;
+    font-weight: 700;
+
+}
+
+main dl dd {
+    color: #024873;
+    font-size: .9rem;
+    margin-left: 20px;
+
+}
+
+main dl ul {
+    list-style-type: circle;
+
+
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address {
+
+    font-style: normal;
+    background-color: #f7f7dc;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 2px solid #05402b;
+    border-radius: .8rem;
+}
+
+/* home gallery stuff here */
+figure.homepage {
+    margin: 0 0 0 10px;
+    width: 40%;
+    float: right;
+}
+
+figure.homepage img {
+    width: 100%;
+    height: auto;
+
+}
+
+figure.homepage figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+/* gallery stuff here*/
+
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #05402b;
+}
+
+/* style for the contact form */
+.myform fieldset {
+    border: 1px solid #2b2b2b;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+}
+
+.myform legend {
+    color: #05402b;
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
+.myform label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.myform label,
+.myform select,
+.myform [type=text],
+.myform [type=tel],
+.myform [type=email],
+.myform textarea {
+    display: block;
+}
+
+.myform select,
+.myform [type=text],
+.myform [type=tel],
+.myform [type=email],
+.myform textarea {
+
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
+}
+
+.myform textarea {
+    height: 12rem;
+    width: 90%;
+    margin-right: 0;
+}
+
+/* suddle red */
+.myform input:required:invalid,
+.myform input[type=email]:required:invalid,
+.myform textarea:required:invalid,
+.myform select:required:invalid {
+    background-color: #ededed;
+    border: 2px solid #05402b;
+}
+
+/* suddle green*/
+.myform input:required:valid,
+.myform input[type=email]:required:valid,
+.myform textarea:required:valid,
+.myform select:required:valid {
+    background-color: transparent;
+    border: 2px solid green;
+}
+
+
+.myform [type=submit] {
+    background-color: #05402b;
+    color: #f7f7dc;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin: 1rem 0 0 1vw;
+
+}
+
+.myform [type=submit]:hover {
+    background-color: #032d1e;
+    cursor: pointer;
+}
+
+/*this is the footer area stuff here*/
+
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .9rem;
+
+}
