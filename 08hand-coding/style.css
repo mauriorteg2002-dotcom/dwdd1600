@@ -1,0 +1,363 @@
+/*this is the start of my css*/
+
+body {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/*this is the header area stuff here*/
+header {
+
+    background-color: #05402b;
+    padding: 1rem 2vw;
+}
+
+header span {
+    margin: 0;
+    color: #f7f7dc;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+
+/* small screen navagation */
+
+@media only screen and (max-width: 800px) {
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    nav a {
+
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
+        color: #05402b;
+
+    }
+
+    nav .active {
+        background-color: #f7f7dc;
+    }
+
+}
+
+
+/*this is the navagation stuff here*/
+@media only screen and (min-width: 800px) {
+    nav {
+        border-top: solid 1px #E0E6E6;
+
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        padding: 1.2rem 1rem .3rem 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #05402b;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 2px #f7f7dc;
+    }
+
+    nav .active a {
+        border-bottom: solid 2px #2b2b2b;
+    }
+
+    nav a:hover {
+        color: #2b2b2b;
+    }
+}
+
+
+
+
+
+/*this is the main area stuff here*/
+
+main {
+    padding: 1rem 2vw;
+
+}
+
+main h1 {
+    color: #2b2b2b;
+}
+
+main h2 {
+    color: #2b2b2b;
+    margin-bottom: .2rem;
+}
+
+main p {
+    color: #333;
+    margin: 0;
+}
+
+main ol {
+    padding: .5rem 30px;
+    background-color: #efefef;
+    list-style-type: lower-alpha;
+
+}
+
+main dl dt {
+    color: #05402b;
+    font-weight: 700;
+
+}
+
+main dl dd {
+    color: #024873;
+    font-size: .9rem;
+    margin-left: 20px;
+
+}
+
+main dl ul {
+    list-style-type: circle;
+
+
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address {
+
+    font-style: normal;
+    background-color: #f7f7dc;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 2px solid #05402b;
+    border-radius: .8rem;
+}
+
+/* home gallery stuff here */
+figure.homepage {
+    margin: 0 0 0 10px;
+    width: 40%;
+    float: right;
+}
+
+figure.homepage img {
+    width: 100%;
+    height: auto;
+
+}
+
+figure.homepage figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+/* gallery stuff here*/
+
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #05402b;
+}
+
+div.gallery img:hover {
+    /* gallery interaction */
+
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, .3);
+
+}
+
+
+/* hero-about me */
+.hero {
+    display: flex; /* puts image and text side by side */
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.profile-pic { /* keeps image from being too large */
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hero-text { 
+    max-width: 600px; /* prevents text from stretching too far */
+}
+
+.hero-text P {
+    margin-bottom: 1rem; /* spacing between paragraphs */
+    line-height: 1.6;         /* easier to read */
+}
+
+
+
+/* style for the contact form */
+.myform fieldset {
+    border: 1px solid #2b2b2b;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+}
+
+.myform legend {
+    color: #05402b;
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
+.myform label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.myform label,
+.myform select,
+.myform [type=text],
+.myform [type=tel],
+.myform [type=email],
+.myform textarea {
+    display: block;
+}
+
+.myform select,
+.myform [type=text],
+.myform [type=tel],
+.myform [type=email],
+.myform textarea {
+
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
+}
+
+.myform textarea {
+    height: 12rem;
+    width: 90%;
+    margin-right: 0;
+}
+
+
+
+/* suddle green*/
+.myform input:required,
+.myform input[type=email]:required,
+.myform textarea:required,
+.myform select:required {
+    background-color: #ededed;
+    border: 2px solid green;
+}
+
+
+.myform [type=submit] {
+    background-color: #05402b;
+    color: #f7f7dc;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin: 1rem 0 0 1vw;
+
+}
+
+.myform [type=submit]:hover {
+    background-color: #032d1e;
+    cursor: pointer;
+}
+
+
+/*price table for the contact page*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+
+}
+
+ table th {
+    background-color: #f7f7dc;
+    padding: 0.75em;  ;
+    text-align: left ;
+
+
+}
+
+table td {
+    color: #54691f;
+    padding: .4rem 2vw;
+
+}
+
+table tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+table tr:hover{
+    background-color: rgb(84,105, 31, .2);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*this is the footer area stuff here*/
+
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .9rem;
+
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
