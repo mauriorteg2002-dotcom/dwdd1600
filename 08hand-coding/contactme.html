@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mauricio Ortega Ramos">
+    <meta name="description" content="homepage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauricio Ortega Ramos Portfolio : Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--start the page head-->
+    <header>
+         <img src="gallery/icontemp.webp" alt="logo for Portfolio" height="105" width="100">
+        <span>Mauricio Ortega Ramos</span>
+    </header>
+
+    <!--starT the page navigation-->
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="mywork.html">My Work</a></li>
+            <li class="active"> <a href="contactme.html">Contact</a></li>
+            <li> <a href="aboutme.html">About Me</a></li>
+            <li> <a href="vlog.html">Vlog</a></li>
+           
+        </ul>
+
+    </nav>
+    <!--start the main content-->
+    <main>
+        <h1>Let's Work Together</h1>
+
+
+        <form method="get" action="thanks.html" class="myform">
+            <fieldset>
+                <legend>Client Information</legend>
+                <label> First Name : <input type="text" name="first_name" required></label>
+
+                <label> Last Name :<input type="text" name="last_name" required></label>
+
+                <label> Number : <input type="tel" name="phone" required placeholder="555-555-5555"> </label>
+                
+                 <label>Email : <input type="email" name="Email" required placeholder="Username@gmail.com"> </label>
+
+            </fieldset> <!-- seprete box -->
+            
+            <fieldset>
+                <legend> What Do You Need? </legend>
+                
+                <label> <input type="radio" value="branding" name="service" required > Branding & Logo Design </label>
+
+                <label> <input type="radio" value="web" name="service" required> Website Design</label>
+
+                <label> <input type="radio" value="social" name="service" required> Social Media Graphics</label>
+
+                <label> <input type="radio" value="print" name="service" required> Print Design</label>
+
+                <label> <input type="radio" value="other" name="service" required> Other</label>
+
+            </fieldset>
+               
+            <!-- seprete box -->
+            <fieldset>
+                <legend>Preferred Contact Method</legend>
+                <label> <input type="checkbox"  name="contact_method" value="email"> Email</label>
+        
+                <label> <input type="checkbox"  name="contact_method" value="phone"> Phone</label>
+
+                <label> <input type="checkbox"  name="contact_method" value="zoom"> Zoom Meeting</label>
+
+                <label> <input type="checkbox"  name="contact_method" value="irl"> In Person</label> 
+
+                <label> Project Timeline:
+                    
+                    <select name="time" required>
+                        <option value="" disabled selected> please select an option </option>
+                        <option value="asap"> ASAP</option>
+                        <option value="week"> Within 2 weeks </option>
+                        <option value="afternoon"> Within a Month </option>
+                        <option value="Flexible"> Flexible </option>
+                    </select>
+
+                </label>
+                
+            </fieldset>
+             <label>Tell Me About Your Project:
+                    <textarea name="comments" required></textarea>
+                </label>
+
+                <input type="submit" value=" Send Request">
+        </form>
+
+
+         <h1> Every project ranges depending on time and effort </h1>
+        
+         <p><strong>All listed prices are starting rates Final project costs may vary based on scope, complexity, timeline, and specific client requirements.</strong></p>
+            <break>
+         <table>
+            <tr>  <!-- list menu stuff-->
+                <th>project</th>
+                <th> cost</th>
+            </tr>
+            <tr>
+                <td>logos</td>
+                <td> $50</td>
+            </tr>
+
+             <tr>
+                <td> branding/Rebranding</td>
+                <td> $100</td>
+            </tr>
+
+             <tr>
+                <td> package desing</td>
+                <td> $200</td>
+            </tr>
+
+             <tr>
+                <td>video/animation work</td>
+                <td> $500</td>
+            </tr>
+
+        </table>
+    
+
+
+
+    </main>
+    <!--start the page footer-->
+   <footer>
+        <p>&copy;2025 &bull; Mauricio Ortega Ramos &bull; <a href="mailto:Mauriorteg2002@gmail.com">Email Me</a> &bull; <a href="https://www.instagram.com/grandma_morice/">Instagram </a> </p>
+    </footer>
+
+</body>
+
+</html>
